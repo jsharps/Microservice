@@ -56,7 +56,7 @@ namespace PlatformService.Controllers
 
       var platformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
 
-      //return CreatedAtRoute(nameof()platformReadDto);
+      return CreatedAtRoute(nameof(GetPlatformById), new { Id=platformReadDto.Id,}, platformReadDto );
     }
   }
 }

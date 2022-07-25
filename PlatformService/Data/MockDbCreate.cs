@@ -2,7 +2,7 @@ using PlatformService.Models;
 
 namespace PlatformService.Data
 {
-  public static class DbCreate
+  public static class MockDbCreate
   {
     public static void PrePopulation(IApplicationBuilder applicationBuilder)
     {
@@ -20,8 +20,8 @@ namespace PlatformService.Data
         Console.WriteLine("--> Seeding data");
 
         context.Platforms.AddRange(
-          new Platform() {Name="Dot net", Publisher="Microsft", Cost="Free"},
-          new Platform() {Name="SQL Server Express", Publisher="Microsft", Cost="Free"},
+          new Platform() {Name="Dot net", Publisher="Microsoft", Cost="Free"},
+          new Platform() {Name="SQL Server Express", Publisher="Microsoft", Cost="Free"},
           new Platform() {Name="kubernetes", Publisher="Cloud Native Computing Foundation", Cost="Free"}
         );
 

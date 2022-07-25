@@ -21,7 +21,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    DbCreate.PrePopulation(app);
+    MockDbCreate.PrePopulation(app);
 
 }
 
