@@ -21,9 +21,9 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    MockDbCreate.PrePopulation(app);
-
 }
+
+MockDbCreate.PrePopulation(app);
 
 app.UseHttpsRedirection();
 
