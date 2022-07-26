@@ -1,0 +1,12 @@
+#adding dotnet packages
+dotnet add package
+
+#building docker
+docker build -t <your docker hub id>/<app/servicename>
+
+#running docker
+docker run -p 8080:80 -d <your docker hub id>/<app/servicename>
+
+
+#k8s
+kubectl apply -f platforms-deploy.yaml
