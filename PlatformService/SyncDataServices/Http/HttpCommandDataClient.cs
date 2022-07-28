@@ -6,13 +6,15 @@ namespace PlatformService.SyncDataServices.Http
 {
     public class HttpCommandDataClient : ICommandDataClient
     {
-        private readonly HttpClient _httpClient;
+      private readonly HttpClient _httpClient;
+      private readonly IConfiguration _config;
 
-        public HttpCommandDataClient(HttpClient httpClient, IConfiguration _config )
-        {
-            _httpClient = httpClient;
-        }
-        public async Task SendPlatformToCommand(PlatformReadDto platform)
+    public HttpCommandDataClient(HttpClient httpClient, IConfiguration config )
+    {
+        _httpClient = httpClient;
+        _config = config;
+    }
+    public async Task SendPlatformToCommand(PlatformReadDto platform)
         {
             var httpContent = new StringContent(
                 JsonSerializer.Serialize(platform),
@@ -20,7 +22,7 @@ namespace PlatformService.SyncDataServices.Http
                 "application/json"
             );
 
-            var response = await _httpClient.PostAsync("http://localhost:5197/api/c/platforms", httpContent);
+            var response = await _httpClient.PostAsync($"{_config["CommandService"]}", httpContent);
 
             if(response.IsSuccessStatusCode)
             {
