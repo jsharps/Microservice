@@ -1,14 +1,22 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace CommandsService.Models
 {
-  public class Command{
+  public class Command
+  {
+    [Key]
+    [Required]
     public int Id { get; set; }
 
+    [Required]
     public int HowTo { get; set; }
 
+    [Required]
     public int CommandLine { get; set; }
 
+    [Required]
     public int PlatformId { get; set; }
 
-    public Platform Platform {get; set;}
+    public Platform? Platform {get; set;}
   }
 }
