@@ -4,10 +4,20 @@ using PlatformService.SyncDataServices.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMemoryDb"));
+if(builder.Environment.IsProduction())
+{
+    Console.WriteLine("--> Using SQL Server");
+    builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("PlatformsConnection")));
+}
+else
+{ 
+    Console.WriteLine("--> Using InMemory DB");
+   
+    builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMemoryDb"));
+   
+}
 
-builder.Services.AddScoped<IPlatformRepository, MockPlatformRepository>();
+builder.Services.AddScoped<IPlatformRepository, PlatformRepository>();
 
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 
@@ -19,19 +29,20 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
 var app = builder.Build();
+
 
 Console.WriteLine($"--> CommandService Endpoint {app.Configuration["CommandService"]}");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-MockDbCreate.PrePopulation(app);
+DbCreate.PrePopulation(app, app.Environment.IsProduction());
 
 app.UseHttpsRedirection();
 

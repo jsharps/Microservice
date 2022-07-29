@@ -2,11 +2,11 @@ using PlatformService.Models;
 
 namespace PlatformService.Data;
 
-public class MockPlatformRepository : IPlatformRepository
+public class PlatformRepository : IPlatformRepository
 {
   private readonly AppDbContext _context;
 
-  public MockPlatformRepository(AppDbContext context)
+  public PlatformRepository(AppDbContext context)
     {
         _context = context;
     }

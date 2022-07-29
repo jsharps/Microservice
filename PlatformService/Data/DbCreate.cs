@@ -1,20 +1,35 @@
+using Microsoft.EntityFrameworkCore;
 using PlatformService.Models;
 
 namespace PlatformService.Data
 {
-  public static class MockDbCreate
+  public static class DbCreate
   {
-    public static void PrePopulation(IApplicationBuilder applicationBuilder)
+    public static void PrePopulation(IApplicationBuilder applicationBuilder, bool isProd)
     {
       using(var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
       {
-        SeedData(serviceScope.ServiceProvider.GetService<AppDbContext>());
+        SeedData(serviceScope.ServiceProvider.GetService<AppDbContext>(), isProd);
       }
 
     }
 
-    private static void SeedData(AppDbContext context)
+    private static void SeedData(AppDbContext context,  bool isProd)
     {
+      if(isProd)
+      {
+        try
+        {
+          Console.WriteLine($"--> Attempting Migration");
+          context.Database.Migrate();
+        }
+        catch(Exception ex)
+        {
+          Console.WriteLine($"--> Error. {ex}");
+        }
+      }
+
+
       if (!context.Platforms.Any())
       {
         Console.WriteLine("--> Seeding data");
