@@ -22,6 +22,7 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SQLServer" Version="6.0.7" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 

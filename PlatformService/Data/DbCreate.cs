@@ -44,7 +44,7 @@ namespace PlatformService.Data
       }
       else
       {
-        Console.WriteLine("--> We akready have data");
+        Console.WriteLine("--> We already have data");
       }
     }
   }

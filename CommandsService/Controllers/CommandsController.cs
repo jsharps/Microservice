@@ -1,6 +1,7 @@
 using AutoMapper;
 using CommandsService.Data;
 using CommandsService.Dtos;
+using CommandsService.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CommandsService.Controllers
@@ -33,5 +34,50 @@ namespace CommandsService.Controllers
             return Ok(_mapper.Map<IEnumerable<CommandReadDto>>(commands));
 
         }
+
+        [HttpGet("{commandId}", Name="GetCommandForPlatform")]
+        public ActionResult<IEnumerable<CommandReadDto>> GetCommandForPlatform(int platformId, int commandId)
+        {
+           Console.WriteLine($"--> Hit GetCommandForPlatform: {platformId} / {commandId}");
+
+            if(!_repository.PlatformExits(platformId))
+            {
+                return NotFound();
+            }
+
+            var command = _repository.GetCommand(platformId, commandId);
+
+            if(command == null)
+            {
+              return NotFound();
+            }
+
+             return Ok(_mapper.Map<IEnumerable<CommandReadDto>>(command));
+        }
+
+        [HttpPost]
+        public ActionResult<IEnumerable<CommandReadDto>> CreateCommandForPlatform(int platformId, CommandCreateDto commandDto)
+        {
+          Console.WriteLine($"--> Hit CreateCommandForPlatform: {platformId}");
+
+            if(!_repository.PlatformExits(platformId))
+            {
+                return NotFound();
+            }
+
+            var command = _mapper.Map<Command>(commandDto);
+
+            _repository.CreateCommand(platformId, command);
+            _repository.SaveChanges();
+
+            var commandReadDto = _mapper.Map<CommandReadDto>(command);
+
+            return CreatedAtRoute(nameof(GetCommandForPlatform), 
+                        new {platformId = platformId, commandId = commandReadDto.Id}, 
+                        commandReadDto);
+
+
+        }
+
     }
 }
