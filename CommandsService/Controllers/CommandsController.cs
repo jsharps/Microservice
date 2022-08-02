@@ -52,7 +52,7 @@ namespace CommandsService.Controllers
               return NotFound();
             }
 
-             return Ok(_mapper.Map<IEnumerable<CommandReadDto>>(command));
+             return Ok(_mapper.Map<CommandReadDto>(command));
         }
 
         [HttpPost]
