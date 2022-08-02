@@ -2,10 +2,9 @@ using System.Text.Json;
 using AutoMapper;
 using CommandsService.Data;
 using CommandsService.Dtos;
-using CommandsService.EventProcessing;
 using CommandsService.Models;
 
-namespace CommandService.EventProcessing
+namespace CommandsService.EventProcessing
 {
   public class EventProcessor : IEventProcessor
   {

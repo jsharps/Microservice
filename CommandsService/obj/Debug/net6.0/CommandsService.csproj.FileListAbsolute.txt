@@ -70,3 +70,5 @@ C:\Users\extjmanrique\src\Microservice\CommandsService\obj\Debug\net6.0\refint\C
 C:\Users\extjmanrique\src\Microservice\CommandsService\obj\Debug\net6.0\CommandsService.pdb
 C:\Users\extjmanrique\src\Microservice\CommandsService\obj\Debug\net6.0\CommandsService.genruntimeconfig.cache
 C:\Users\extjmanrique\src\Microservice\CommandsService\obj\Debug\net6.0\ref\CommandsService.dll
+C:\Users\JeffManrique\src\Microservice\CommandsService\bin\Debug\net6.0\appsettings.Production.json
+C:\Users\JeffManrique\src\Microservice\CommandsService\bin\Debug\net6.0\RabbitMQ.Client.dll

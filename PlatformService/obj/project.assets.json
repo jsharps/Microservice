@@ -2203,23 +2203,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\extjmanrique\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\JeffManrique\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\extjmanrique\\src\\Microservice\\PlatformService\\PlatformService.csproj",
+      "projectUniqueName": "c:\\Users\\JeffManrique\\src\\Microservice\\PlatformService\\PlatformService.csproj",
       "projectName": "PlatformService",
-      "projectPath": "C:\\Users\\extjmanrique\\src\\Microservice\\PlatformService\\PlatformService.csproj",
-      "packagesPath": "C:\\Users\\extjmanrique\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\extjmanrique\\src\\Microservice\\PlatformService\\obj\\",
+      "projectPath": "c:\\Users\\JeffManrique\\src\\Microservice\\PlatformService\\PlatformService.csproj",
+      "packagesPath": "C:\\Users\\JeffManrique\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\JeffManrique\\src\\Microservice\\PlatformService\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\extjmanrique\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JeffManrique\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2294,7 +2290,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
