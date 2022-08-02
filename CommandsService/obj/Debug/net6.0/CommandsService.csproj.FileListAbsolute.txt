@@ -74,3 +74,7 @@ C:\Users\JeffManrique\src\Microservice\CommandsService\bin\Debug\net6.0\appsetti
 C:\Users\JeffManrique\src\Microservice\CommandsService\bin\Debug\net6.0\RabbitMQ.Client.dll
 C:\Users\extjmanrique\src\Microservice\CommandsService\bin\Debug\net6.0\appsettings.Production.json
 C:\Users\extjmanrique\src\Microservice\CommandsService\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\extjmanrique\src\Microservice\CommandsService\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Users\extjmanrique\src\Microservice\CommandsService\bin\Debug\net6.0\Grpc.Core.Api.dll
+C:\Users\extjmanrique\src\Microservice\CommandsService\bin\Debug\net6.0\Grpc.Net.Client.dll
+C:\Users\extjmanrique\src\Microservice\CommandsService\bin\Debug\net6.0\Grpc.Net.Common.dll

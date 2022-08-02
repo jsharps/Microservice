@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "OLi2m6x30A0XAbX4L/GEyLOb1nXWx3o99cPKiMTAXqK2uFw3RL6TUt3qt/CtxzqPq8vINQ5hzzCTif0fmz/UQw==",
+  "dgSpecHash": "jJ3DwqtnU7Tn9k1cdTkIaq6AIdX6u84UKQijUlvecHM7fFWoaWTtGaVelALDDTh1Y1bB43HkHuwjc7izkTNPmg==",
   "success": true,
   "projectFilePath": "C:\\Users\\extjmanrique\\src\\Microservice\\CommandsService\\CommandsService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\extjmanrique\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\extjmanrique\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\extjmanrique\\.nuget\\packages\\google.protobuf\\3.21.4\\google.protobuf.3.21.4.nupkg.sha512",
+    "C:\\Users\\extjmanrique\\.nuget\\packages\\grpc.core.api\\2.47.0\\grpc.core.api.2.47.0.nupkg.sha512",
+    "C:\\Users\\extjmanrique\\.nuget\\packages\\grpc.net.client\\2.47.0\\grpc.net.client.2.47.0.nupkg.sha512",
+    "C:\\Users\\extjmanrique\\.nuget\\packages\\grpc.net.common\\2.47.0\\grpc.net.common.2.47.0.nupkg.sha512",
+    "C:\\Users\\extjmanrique\\.nuget\\packages\\grpc.tools\\2.47.0\\grpc.tools.2.47.0.nupkg.sha512",
     "C:\\Users\\extjmanrique\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\extjmanrique\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\extjmanrique\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",

@@ -12,6 +12,10 @@ namespace PlatformService.Profiles
       CreateMap<Platform, PlatformReadDto>();
       CreateMap<PlatformCreateDto, Platform>();
       CreateMap<PlatformReadDto, PlatformPublishedDto>();
+      CreateMap<Platform, GrpcPlatformModel>()
+        .ForMember(destination => destination.PlatformId, opt => opt.MapFrom(src => src.Id))
+        .ForMember(destination => destination.Name, opt => opt.MapFrom(src => src.Name))
+        .ForMember(destination => destination.Publisher, opt => opt.MapFrom(src => src.Publisher));
     }
   }
 }

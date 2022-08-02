@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PlatformService.AsyncDataServices;
 using PlatformService.Data;
+using PlatformService.SyncDataServices.Grpc;
 using PlatformService.SyncDataServices.Http;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,6 +24,8 @@ builder.Services.AddScoped<IPlatformRepository, PlatformRepository>();
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 
 builder.Services.AddSingleton<IMessageBusClient, MessageBusClient>();
+
+builder.Services.AddGrpc();
 
 builder.Services.AddControllers();
 
@@ -50,6 +53,8 @@ DbCreate.PrePopulation(app, app.Environment.IsProduction());
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.MapGrpcService<GrpcPlatformService>();
 
 app.MapControllers();
 
