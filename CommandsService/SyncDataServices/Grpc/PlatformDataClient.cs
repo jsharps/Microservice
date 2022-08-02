@@ -3,7 +3,7 @@ using CommandsService.Models;
 using Grpc.Net.Client;
 using PlatformService;
 
-namespace CommandService.SyncDataServices.Grpc
+namespace CommandsService.SyncDataServices.Grpc
 {
   public class PlatformDataClient : IPlatformDataClient
   {

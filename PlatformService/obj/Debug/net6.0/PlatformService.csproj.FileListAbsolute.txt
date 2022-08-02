@@ -135,3 +135,12 @@ C:\Users\extjmanrique\src\Microservice\PlatformService\bin\Debug\net6.0\Grpc.Cor
 C:\Users\extjmanrique\src\Microservice\PlatformService\bin\Debug\net6.0\Grpc.Net.Client.dll
 C:\Users\extjmanrique\src\Microservice\PlatformService\bin\Debug\net6.0\Grpc.Net.ClientFactory.dll
 C:\Users\extjmanrique\src\Microservice\PlatformService\bin\Debug\net6.0\Grpc.Net.Common.dll
+C:\Users\JeffManrique\src\Microservice\PlatformService\bin\Debug\net6.0\appsettings.Production.json
+C:\Users\JeffManrique\src\Microservice\PlatformService\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Users\JeffManrique\src\Microservice\PlatformService\bin\Debug\net6.0\Grpc.AspNetCore.Server.dll
+C:\Users\JeffManrique\src\Microservice\PlatformService\bin\Debug\net6.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\JeffManrique\src\Microservice\PlatformService\bin\Debug\net6.0\Grpc.Core.Api.dll
+C:\Users\JeffManrique\src\Microservice\PlatformService\bin\Debug\net6.0\Grpc.Net.Client.dll
+C:\Users\JeffManrique\src\Microservice\PlatformService\bin\Debug\net6.0\Grpc.Net.ClientFactory.dll
+C:\Users\JeffManrique\src\Microservice\PlatformService\bin\Debug\net6.0\Grpc.Net.Common.dll
+C:\Users\JeffManrique\src\Microservice\PlatformService\bin\Debug\net6.0\RabbitMQ.Client.dll

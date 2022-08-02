@@ -1297,23 +1297,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\extjmanrique\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\JeffManrique\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\extjmanrique\\src\\Microservice\\CommandsService\\CommandsService.csproj",
+      "projectUniqueName": "C:\\Users\\JeffManrique\\src\\Microservice\\CommandsService\\CommandsService.csproj",
       "projectName": "CommandsService",
-      "projectPath": "C:\\Users\\extjmanrique\\src\\Microservice\\CommandsService\\CommandsService.csproj",
-      "packagesPath": "C:\\Users\\extjmanrique\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\extjmanrique\\src\\Microservice\\CommandsService\\obj\\",
+      "projectPath": "C:\\Users\\JeffManrique\\src\\Microservice\\CommandsService\\CommandsService.csproj",
+      "packagesPath": "C:\\Users\\JeffManrique\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JeffManrique\\src\\Microservice\\CommandsService\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\extjmanrique\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JeffManrique\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1398,7 +1394,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

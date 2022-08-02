@@ -1,6 +1,6 @@
 using CommandsService.Models;
 
-namespace CommandService.SyncDataServices.Grpc
+namespace CommandsService.SyncDataServices.Grpc
 {
 
   public interface IPlatformDataClient

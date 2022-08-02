@@ -3,7 +3,7 @@ using CommandsService.EventProcessing;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace CommandService.AsyncDataServices
+namespace CommandsService.AsyncDataServices
 {
     public class MessageBusSubscriber : BackgroundService
     {
